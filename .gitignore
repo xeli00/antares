@@ -1,9 +1,1 @@
-.DS_Store
-dist/
-node_modules/
-thumbs.db
-.idea/
-.vscode
-TODO.md
-*.txt
-package-lock.json
+node_modules
