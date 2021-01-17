@@ -7,15 +7,40 @@ const buildPath = path.resolve(__dirname, 'docs');
 
 module.exports = {
    entry: {
-      index: './src/index.js'
+      main: './src/index.js'
    },
    output: {
+      publicPath: '',
       filename: '[name].js',
       path: buildPath
    },
 
    module: {
       rules: [
+         {
+            test: /\.hbs$/,
+            loader: 'handlebars-loader',
+            options: {
+               inlineRequires: '/assets/'
+            }
+         },
+         {
+            test: /\.(html)$/,
+            use: {
+               loader: 'html-loader'
+            }
+         },
+         {
+            test: /\.(png|svg|jpg|gif|ico)$/,
+            include: [
+               path.resolve(__dirname, 'src/assets')
+            ],
+            loader: 'file-loader',
+            options: {
+               name: 'img/[name].[ext]',
+               esModule: false
+            }
+         },
          {
             test: /\.js$/,
             exclude: /node_modules/,
@@ -42,14 +67,10 @@ module.exports = {
       }),
 
       new HtmlWebpackPlugin({
-         template: './src/index.html',
+         template: './src/pages/index.hbs',
          inject: true,
-         chunks: ['index'],
+         chunks: ['main'],
          filename: 'index.html'
-      }),
-
-      new MiniCssExtractPlugin({
-         filename: '[name].css'
       })
    ]
 };
