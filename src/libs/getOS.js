@@ -1,10 +1,10 @@
 function getOS () {
-   var userAgent = window.navigator.userAgent;
-   var platform = window.navigator.platform;
-   var macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
-   var windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
-   var iosPlatforms = ['iPhone', 'iPad', 'iPod'];
-   var os = null;
+   const userAgent = window.navigator.userAgent;
+   const platform = window.navigator.platform;
+   const macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
+   const windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
+   const iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+   let os = null;
 
    if (macosPlatforms.indexOf(platform) !== -1)
       os = 'MacOS';
