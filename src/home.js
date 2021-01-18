@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
          case 'Linux':
             className = 'fa-linux';
-            extension = 'appImage';
+            extension = 'AppImage';
             break;
       }
 
@@ -34,6 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
             downloadButton.href = latest.browser_download_url;
             downloadButton.innerHTML = `<i class="fa ${className} is-size-5 mr-2"></i> Download Antares (${data.name})`;
             allDownloadButton.classList.toggle('is-hidden');
-         });
+         }).catch(console.log);
    }
 });
