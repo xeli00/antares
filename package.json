@@ -18,9 +18,7 @@
     "url": "https://github.com/EStarium/antares/issues"
   },
   "homepage": "https://github.com/EStarium/antares#readme",
-  "dependencies": {
-    "feather-icons": "^4.28.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

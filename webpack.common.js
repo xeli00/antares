@@ -7,7 +7,8 @@ const buildPath = path.resolve(__dirname, 'docs');
 
 module.exports = {
    entry: {
-      main: './src/index.js'
+      main: './src/main.js',
+      home: './src/home.js'
    },
    output: {
       publicPath: '',
@@ -69,7 +70,7 @@ module.exports = {
       new HtmlWebpackPlugin({
          template: './src/pages/index.hbs',
          inject: true,
-         chunks: ['main'],
+         chunks: ['main', 'home'],
          filename: 'index.html'
       })
    ]

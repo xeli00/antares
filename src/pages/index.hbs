@@ -8,25 +8,42 @@
    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="../assets/icon.ico" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <title>Antares SQL Client</title>
 </head>
 
 <body>
-   <div class="container">
+   <section class="hero is-medium antares-hero">
       {{> ../partials/header}}
-      <section class="hero">
-         <div class="hero-body">
-            <div class="container">
-               <h1 class="title">
-                  Open source SQL client<br>
-                  made to be simple and complete.
-               </h1>
-               <h2 class="subtitle">
-                  WEBSITE UNDER CONSTRUCTION!
-               </h2>
+      <div class="hero-body">
+         <div class="container">
+            <div class="columns">
+               <div class="column is-12-mobile is-flex is-flex-direction-column is-justify-content-center">
+                  <h1 class="title is-1 pb-6">
+                     Open source SQL client<br>
+                     made to be simple.
+                  </h1>
+                  <h2 class="subtitle is-4 pb-4">
+                     Antares is a brand new solution for a complete <br>
+                     database management experience.
+                  </h2>
+                  <div class="buttons">
+                     <a class="button is-primary" id="download-button">
+                        <i class="fa fa-download is-size-5 mr-2"></i> Download Antares
+                     </a>
+                     <a href="https://github.com/Fabio286/antares/releases" class="button is-dark is-hidden" id="all-downloads-button">
+                        <i class="fa fa-download is-size-5 mr-2"></i> Other Downloads
+                     </a>
+                  </div>
+               </div>
+               <div class="column is-12-mobile">
+                  <img src="../assets/images/screen1.png" class="antares-screenshot" alt="Antares SQL">
+               </div>
             </div>
          </div>
-      </section>
+      </div>
+   </section>
+   <div class="container">
    </div>
    {{> ../partials/footer}}
 </body>

@@ -1,6 +1,31 @@
+@charset "utf-8";
+
+@import 'bulma/sass/utilities/initial-variables.sass';
+@import 'variables';
+@import '~bulma/bulma';
+
 /* CUSTOMS */
-.site-logo {
-  width: 48px;
-  height: 48px;
-  max-height: 48px !important;
+.navbar-brand {
+  position: relative;
+
+  > .navbar-item {
+    padding-left: 48px;
+  }
+
+  .antares-logo {
+    width: 48px;
+    height: 48px;
+    max-height: 48px !important;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.antares-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/images/bg.jpg');
+
+  .antares-screenshot {
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 2px;
+  }
 }
