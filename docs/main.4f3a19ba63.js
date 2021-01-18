@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelectorAll(".navbar-menu"),t=document.querySelector(".navbar-burger");t.addEventListener("click",(function(){t.classList.toggle("is-active"),e.forEach((function(e){e.classList.toggle("is-active")}))}))}))})();
