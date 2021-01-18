@@ -1,27 +1,28 @@
+import getOS from './libs/getOS';
+
 document.addEventListener('DOMContentLoaded', () => {
    const downloadButton = document.getElementById('download-button');
    const allDownloadButton = document.getElementById('all-downloads-button');
-   let OS;
-   let extension;
-   let className;
-
-   if (navigator.appVersion.includes('Win')) {
-      OS = 'Windows';
-      className = 'fa-windows';
-      extension = 'exe';
-   }
-   else if (navigator.appVersion.includes('Mac')) {
-      OS = 'MacOS';
-      className = 'fa-apple';
-      extension = 'dmg';
-   }
-   else if (navigator.appVersion.includes('Linux')) {
-      OS = 'Linux';
-      className = 'fa-linux';
-      extension = 'appImage';
-   }
+   const OS = getOS();
 
    if (OS) {
+      let extension;
+      let className;
+
+      switch (OS) {
+         case 'Windows':
+            className = 'fa-windows';
+            extension = 'exe';
+            break;
+         case 'MacOS':
+            className = 'fa-apple';
+            extension = 'dmg';
+            break;
+         case 'Linux':
+            className = 'fa-linux';
+            extension = 'appImage';
+      }
+
       fetch('https://api.github.com/repos/fabio286/antares/releases/latest')
          .then(response => response.json())
          .then(data => {
