@@ -1,6 +1,6 @@
 import './scss/main.scss';
 
-// On DOcument Ready
+// On Document Ready
 document.addEventListener('DOMContentLoaded', () => {
    const navbars = document.querySelectorAll('.navbar-menu');
    const burger = document.querySelector('.navbar-burger');
