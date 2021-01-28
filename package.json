@@ -25,6 +25,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "bulma": "^0.9.1",
+    "bulma-steps": "^2.2.1",
     "chai": "^4.1.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",

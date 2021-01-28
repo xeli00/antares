@@ -3,6 +3,8 @@
 @import 'bulma/sass/utilities/initial-variables.sass';
 @import 'variables';
 @import '~bulma/bulma';
+@import '~bulma-steps/src/sass/';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 /* CUSTOMS */
 .navbar-brand {
@@ -21,11 +23,51 @@
   }
 }
 
-.antares-hero {
+.bg-antares {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/images/bg.jpg');
+  background-attachment: fixed;
 }
 
 .antares-screenshot {
   box-shadow: 1px 1px 5px #000;
   border-radius: 2px;
+}
+
+.antares-title {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.steps.is-xlarge {
+  font-size: 1.2rem;
+  min-height: 3rem;
+
+  .step-item {
+    .step-marker {
+      height: 5rem;
+      width: 5rem;
+      position: absolute;
+      left: calc(50% - 2.35rem);
+      border-color: $grey-darker;
+    }
+
+    .step-details {
+      margin-top: 5rem;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      padding-top: 0.2em;
+
+      .step-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    }
+
+    &:not(:first-child)::before {
+      height: 0.2em;
+      width: 100%;
+      bottom: 0;
+      left: -50%;
+      top: 2.5rem;
+    }
+  }
 }

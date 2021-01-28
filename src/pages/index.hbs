@@ -14,17 +14,17 @@
 </head>
 
 <body>
-   <section class="hero is-medium antares-hero">
+   <section class="hero is-medium bg-antares">
       {{> ../partials/header}}
       <div class="hero-body">
          <div class="container">
             <div class="columns">
                <div class="column is-12-mobile is-flex is-flex-direction-column is-justify-content-center">
-                  <h1 class="title is-1 pb-6">
+                  <h1 class="title antares-title is-1 pb-6">
                      Open source SQL client<br>
                      made to be simple.
                   </h1>
-                  <h2 class="subtitle is-4 pb-4">
+                  <h2 class="subtitle antares-title is-4 pb-4">
                      Antares is a brand new solution for a complete <br>
                      database management experience.
                   </h2>
@@ -46,14 +46,15 @@
          </div>
       </div>
    </section>
+
    <section class="section has-background-grey-dark">
       <div class="container">
          <div class="columns">
             <div class="column has-text-centered">
-               <h1 class="title">About Antares Project</h1>
-               <h2 class="subtitle">
+               <h3 class="title antares-title">About Antares Project</h3>
+               <div class="subtitle antares-title">
                   A new star is born, and is growing fast.
-               </h2>
+               </div>
                <p><a href="https://en.wikipedia.org/wiki/Antares" target="_blank" rel="nofollow">Antares</a> is an
                   <strong>SQL client</strong> that aims to become an useful and complete tool, especially
                   for
@@ -78,15 +79,14 @@
    </section>
 
    <section class="section has-background-grey-darker mt-6">
-
       <div class="container">
          <div class="columns">
             <div class="column is-half is-12-mobile is-flex is-flex-direction-column is-justify-content-center">
-               <h1 class="title">Simple, but complete</h1>
-               <h2 class="subtitle">
+               <h3 class="title antares-title">Simple, but complete</h3>
+               <div class="subtitle antares-title">
                   Features in the right places, <br>
                   not hundreds of tiny buttons or submenu.
-               </h2>
+               </div>
                <p>Antares SQL development is driven by the idea to create a <strong>full featured</strong> tool, <br>
                   <strong>fast</strong> and with a <strong>modern and intuitive UI</strong>.<br>
                   All features are accessible with a few clicks, without having to search for them in dozens of
@@ -100,37 +100,36 @@
       </div>
    </section>
 
-   <section class="section has-background-grey-darker">
+   <section class="section has-background-grey-darker mb-6">
       <div class="container ">
          <div class="columns">
             <div class="column is-half is-12-mobile">
                <img src="../assets/images/screen3.png" class="antares-screenshot" alt="Antares SQL">
             </div>
             <div class="column is-half is-12-mobile is-flex is-flex-direction-column is-justify-content-center">
-               <h1 class="title">Pleasant to use </h1>
-               <h2 class="subtitle">
+               <h3 class="title antares-title">Pleasant to use </h3>
+               <div class="subtitle antares-title">
                   An application that aims to do everything you need <br>
                   to manage your databases.
-               </h2>
+               </div>
                <p>Antares SQL aims to support the largest number of SQL databases <br>
-               by offering all the features necessary to guarantee a complete user experience. <br>
-               This is just the beginning.</p>
+                  by offering all the features necessary to guarantee a complete user experience. <br>
+                  This is just the beginning.</p>
             </div>
          </div>
       </div>
    </section>
 
-   <section class="section has-background-grey-darker">
-      <div class="container has-text-centered">
+   <section class="section bg-antares">
+      <div class="container has-text-centered py-6">
          <div class="columns is-multiline">
-
             <div class="column is-3">
                <div class="card is-shadowless">
                   <div class="card-image pt-6">
                      <i class="fa fa-heart fa-3x"></i>
                   </div>
                   <div class="card-content">
-                     <h3 class="subtitle is-uppercase has-text-weight-bold">Free and Open Source</h3>
+                     <h3 class="subtitle antares-title is-uppercase has-text-weight-bold">Free and Open Source</h3>
                      <div class="content">
                         No paid content, subscriptions or ads. Antares will be always 100% free and open source.
                      </div>
@@ -144,7 +143,7 @@
                      <i class="fa fa-star fa-3x"></i>
                   </div>
                   <div class="card-content">
-                     <h3 class="subtitle is-uppercase has-text-weight-bold">New Features Comes</h3>
+                     <h3 class="subtitle antares-title is-uppercase has-text-weight-bold">New Features Comes</h3>
                      <div class="content">
                         This project is currently in development and new features will be released with each update!
                      </div>
@@ -158,7 +157,7 @@
                      <i class="fa fa-lock fa-3x"></i>
                   </div>
                   <div class="card-content">
-                     <h3 class="subtitle is-uppercase has-text-weight-bold">Secure</h3>
+                     <h3 class="subtitle antares-title is-uppercase has-text-weight-bold">Secure</h3>
                      <div class="content">
                         All saved connections data are encrypted and the key is kept safe by your OS.
                      </div>
@@ -172,7 +171,7 @@
                      <i class="fa fa-user-secret fa-3x"></i>
                   </div>
                   <div class="card-content">
-                     <h3 class="subtitle is-uppercase has-text-weight-bold">Private</h3>
+                     <h3 class="subtitle antares-title is-uppercase has-text-weight-bold">Private</h3>
                      <div class="content">
                         No spyware, telemetry or other sort of background activities. <br>
                         Spontaneous feedbacks are enough.
@@ -180,73 +179,80 @@
                   </div>
                </div>
             </div>
-   </section>
-   </div>
-   </div>
+         </div>
+      </div>
    </section>
 
-   {{!-- <section class="section has-background-grey-dark">
+   <section class="section has-background-grey-darker my-6">
       <div class="container">
-         <div class="columns">
+         <div class="columns pt-3 pb-6">
             <div class="column has-text-centered">
-               <h1 class="title">Databases</h1>
+               <h3 class="title antares-title">Supported Databases</h3>
+               <p>Antares SQL is in an alpha phase but it fully supports MySQL/MariaDB. Support to other databases will come in future releases.</p>
             </div>
          </div>
-         <div class="tile is-ancestor">
-            <div class="tile is-2 is-vertical is-parent">
-               <div class="tile is-child box">
-                  <p class="subtitle">MySQL/MariaDB</p>
-                  <p>Fully supported.</p>
+         <div class="steps is-xlarge">
+            <div class="step-item is-completed">
+               <div class="step-marker" style="left: 27%;">
+                  <figure class="image is-64x64">
+                     <img src="../assets/icons/mysql.svg" alt="MySQL">
+                  </figure>
                </div>
-               <div class="tile is-child box">
-                  <p class="subtitle">PostgreSQL</p>
-                  <p>Coming soon.</p>
+               <div class="step-marker" style="left: 47%;">
+                  <figure class="image is-64x64">
+                     <img src="../assets/icons/mariadb.svg" alt="MariaDB">
+                  </figure>
                </div>
-               <div class="tile is-child box">
-                  <p class="subtitle">SQLite</p>
-                  <p>Coming soon.</p>
-               </div>
-            </div>
-
-            <div class="tile is-2 is-vertical is-parent">
-               <div class="tile is-child box">
-                  <p class="subtitle">MySQL/MariaDB</p>
-                  <p>Fully supported.</p>
-               </div>
-               <div class="tile is-child box">
-                  <p class="subtitle">PostgreSQL</p>
-                  <p>Coming soon.</p>
-               </div>
-               <div class="tile is-child box">
-                  <p class="subtitle">SQLite</p>
-                  <p>Coming soon.</p>
-               </div>
-            </div>
-
-            <div class="tile is-4 is-parent">
-               <div class="tile is-child box">
-                  <p class="subtitle">MySQL/MariaDB</p>
+               <div class="step-details">
+                  <p class="step-title antares-title">MySQL & MariaDB</p>
                   <p>Fully supported.</p>
                </div>
             </div>
-
-            <div class="tile is-parent">
-               <div class="tile is-child box">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
-                     pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi
-                     maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut quam.</p>
-                  <p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis. Pellentesque
-                     interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin felis neque sit
-                     amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit amet. Aenean vitae
-                     gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat tortor.</p>
-                  <p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor
-                     consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper
-                     a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+            <div class="step-item is-active">
+               <div class="step-marker has-background-grey-dark">
+                  <figure class="image is-64x64">
+                     <img src="../assets/icons/pg.svg" alt="PostgreSQL">
+                  </figure>
+               </div>
+               <div class="step-details">
+                  <p class="step-title antares-title">PostgreSQL</p>
+                  <p>Coming soon.</p>
+               </div>
+            </div>
+            <div class="step-item">
+               <div class="step-marker has-background-grey-dark">
+                  <figure class="image is-64x64">
+                     <img src="../assets/icons/sqllite.svg" alt="SQLite">
+                  </figure>
+               </div>
+               <div class="step-details">
+                  <p class="step-title antares-title">SQLite</p>
+                  <p>Coming.</p>
+               </div>
+            </div>
+            <div class="step-item">
+               <div class="step-marker has-background-grey-dark">
+                  <figure class="image is-64x64">
+                     <img src="../assets/icons/mssql.svg" alt="MSSQL">
+                  </figure>
+               </div>
+               <div class="step-details">
+                  <p class="step-title antares-title">SQL Server</p>
+                  <p>Coming.</p>
+               </div>
+            </div>
+            <div class="step-item">
+               <div class="step-marker has-background-grey-dark">
+                  <i class="fa fa-database is-size-2"></i>
+               </div>
+               <div class="step-details">
+                  <p class="step-title antares-title">More...</p>
+                  <p>Coming.</p>
                </div>
             </div>
          </div>
       </div>
-   </section> --}}
+   </section>
    {{> ../partials/footer}}
 </body>
 
