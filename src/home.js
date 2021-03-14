@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fetch('https://api.github.com/repos/fabio286/antares/releases/latest')
          .then(response => response.json())
          .then(data => {
-            const expString = `.*${extension}$`;
+            const expString = `^((?!portable).)*${extension}$`;
             const exp = new RegExp(expString);
             const latest = data.assets.find(asset => exp.test(asset.browser_download_url));
 
