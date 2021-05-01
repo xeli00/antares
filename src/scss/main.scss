@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-@import 'bulma/sass/utilities/initial-variables.sass';
-@import 'variables';
-@import '~bulma/bulma';
-@import '~bulma-steps/src/sass/';
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import "bulma/sass/utilities/initial-variables.sass";
+@import "variables";
+@import "~bulma/bulma";
+@import "~bulma-steps/src/sass/";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 /* CUSTOMS */
 .navbar-brand {
@@ -20,11 +20,12 @@
     max-height: 48px !important;
     position: absolute;
     left: 0;
+    padding: 0.5rem;
   }
 }
 
 .bg-antares {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/images/bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/bg.jpg");
   background-attachment: fixed;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .antares-title {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .steps.is-xlarge {

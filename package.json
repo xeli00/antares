@@ -5,7 +5,7 @@
   "main": "docs/index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EStarium/antares.git"
+    "url": "git+https://github.com/Fabio286/antares.git"
   },
   "author": "Fabio Di Stasio",
   "license": "MIT",
@@ -15,9 +15,9 @@
     "build:prod": "webpack --config webpack.prod.js"
   },
   "bugs": {
-    "url": "https://github.com/EStarium/antares/issues"
+    "url": "https://github.com/Fabio286/antares/issues"
   },
-  "homepage": "https://github.com/EStarium/antares#readme",
+  "homepage": "https://github.com/Fabio286/antares#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
