@@ -74,6 +74,12 @@ module.exports = {
          filename: 'index.html'
       }),
       new HtmlWebpackPlugin({
+         template: './src/pages/download.hbs',
+         inject: true,
+         chunks: ['main'],
+         filename: 'download.html'
+      }),
+      new HtmlWebpackPlugin({
          template: './src/pages/privacy.hbs',
          inject: true,
          chunks: ['main'],
