@@ -62,35 +62,31 @@
       </div>
    </section>
 
-   <section class="section bg-antares pt-0">
+   <section class="section bg-antares pt-5">
       <div class="container has-text-centered py-0">
          <div class="columns is-multiline">
-            <div class="column is-4">
-               <div class="card is-shadowless">
-                  <div class="card-image pt-6">
-                     <i class="fa fa-linux fa-4x"></i>
+            <div class="column is-4 is-relative mb-6">
+               <div class="card is-shadowless" style="overflow: visible;">
+                  <div class="card-image pt-6" style="position: absolute;top: -90px;left: 0;right: 0;">
+                     <span class="os-circle">
+                        <i class="fa fa-windows fa-4x"></i>
+                     </span>
                   </div>
-                  <div class="card-content">
-                     <h3 class="title antares-title has-text-weight-bold">Linux</h3>
-                     <div class="content" id="linuxBlock">
-                        <a class="is-block" href="https://snapcraft.io/antares" target="_blank">
-                           <img alt="Get it from the Snap Store"
-                              src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" />
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="column is-4">
-               <div class="card is-shadowless">
-                  <div class="card-image pt-6">
-                     <i class="fa fa-windows fa-4x"></i>
-                  </div>
-                  <div class="card-content">
-                     <h3 class="title antares-title has-text-weight-bold">Windows</h3>
-                     <div class="content" id="winBlock">
-                        <a class="is-block" href='//www.microsoft.com/store/apps/9nhtb9sq51r1?cid=storebadge&ocid=badge'
+                  <div class="card-content" style="min-height:390px; padding-bottom: 80px;">
+                     <h3 class="title antares-title has-text-weight-bold mt-5">Windows</h3>
+                     <div class="content">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th class="has-text-left has-text-light">Arch</th>
+                                 <th class="has-text-light">Format</th>
+                                 <th class="has-text-light"></th>
+                              </tr>
+                           </thead>
+                           <tbody id="winBlock"></tbody>
+                        </table>
+                        <a class="is-block" style="position: absolute; bottom: 15px; left:0; right: 0;"
+                           href='//www.microsoft.com/store/apps/9nhtb9sq51r1?cid=storebadge&ocid=badge'
                            target="_blank"><img
                               src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png'
                               alt='English badge' style='height: 56px;' />
@@ -100,15 +96,56 @@
                </div>
             </div>
 
-            <div class="column is-4">
-               <div class="card is-shadowless">
-                  <div class="card-image pt-6">
-                     <i class="fa fa-apple fa-4x"></i>
+            <div class="column is-4 is-relative mb-6">
+               <div class="card is-shadowless" style="overflow: visible;">
+                  <div class="card-image pt-6" style="position: absolute;top: -90px;left: 0;right: 0;">
+                     <span class="os-circle">
+                        <i class="fa fa-linux fa-4x"></i>
+                     </span>
                   </div>
-                  <div class="card-content">
-                     <h3 class="title antares-title has-text-weight-bold">MacOS</h3>
-                     <div class="content" id="macBlock">
+                  <div class="card-content" style="min-height:390px; padding-bottom: 80px;">
+                     <h3 class="title antares-title has-text-weight-bold mt-5">Linux</h3>
+                     <div class="content">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th class="has-text-left has-text-light">Arch</th>
+                                 <th class="has-text-light">Format</th>
+                                 <th class="has-text-light"></th>
+                              </tr>
+                           </thead>
+                           <tbody id="linuxBlock"></tbody>
+                        </table>
+                        <a class="is-block" style="position: absolute; bottom: 15px; left:0; right: 0;"
+                           href="https://snapcraft.io/antares" target="_blank">
+                           <img alt="Get it from the Snap Store"
+                              src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" />
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
+            <div class="column is-4 is-relative mb-6">
+               <div class="card is-shadowless" style="overflow: visible;">
+                  <div class="card-image pt-6" style="position: absolute;top: -90px;left: 0;right: 0;">
+                     <span class="os-circle">
+                        <i class="fa fa-apple fa-4x"></i>
+                     </span>
+                  </div>
+                  <div class="card-content" style="min-height:390px; padding-bottom: 80px;">
+                     <h3 class="title antares-title has-text-weight-bold mt-5">MacOS</h3>
+                     <div class="content">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th class="has-text-left has-text-light">Arch</th>
+                                 <th class="has-text-light">Format</th>
+                                 <th class="has-text-light"></th>
+                              </tr>
+                           </thead>
+                           <tbody id="macBlock"></tbody>
+                        </table>
                      </div>
                   </div>
                </div>
