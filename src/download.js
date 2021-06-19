@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
          };
          const windows = {
             amd64: {
-               data: data.assets.find(asset => /^(.*)win.exe$/.test(asset.browser_download_url)),
+               data: data.assets.find(asset => /^(.*)win_x64.exe$/.test(asset.browser_download_url)),
                arch: '64-bit',
                format: 'exe'
             },
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
          };
          const mac = {
             amd64: {
-               data: data.assets.find(asset => /^(.*)mac.dmg$/.test(asset.browser_download_url)),
+               data: data.assets.find(asset => /^(.*)mac_x64.dmg$/.test(asset.browser_download_url)),
                arch: '64-bit',
                format: 'dmg'
             },
